@@ -1,0 +1,16 @@
+{
+
+	"men":{
+		"name":["Alan Budikusuma", "Poul-Erik Høyer Larsen", "Ji Xinpeng", "Taufik Hidayat", 
+			"Lin Dan", "Lin Dan", "Chen Long"],
+		"country":["Indonesia", "Denmark", "China", "Indonesia", "China", "China", "China"],
+		"year":["1992", "1996", "2000", "2004", "2008", "2012", "2016"]
+	},
+	
+	"women":{
+	"name":["Susi Susanti", "Bang Soo-hyun", "Gong Zhichao", "Zhang Ning", "Zhang Ning", 
+		"Li Xuerui", "Carolina Marín"],
+	"country":["Indonesia", "South Korea", "China", "China", "China", "China", "Spain"],
+	"year":["1992", "1996", "2000", "2004", "2008", "2012", "2016"]
+	}
+}

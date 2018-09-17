@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name = "author" content = "Jianqiao Ma">
+    <link rel='icon' href='image/favicon.png?v=2' type='png'> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+
+	<title>Jianqiao Ma</title>
+</head>
+<body>
+	<header class="container-fluid">
+		<nav class="navbar navbar-expand-sm navbar-dark nav-transparent  nav-mine text-uppercase" style="font-family: 'Open Sans', sans-serif;">
+			<a class="navbar-brand" href="index.html" style="float: left; display: inline-block;">
+				<img src="image/si-glyph-network.svg" width="45px" height="45px" alt="logo" class="ml-5"> Jianqiao Ma | SEIS 751
+			</a>
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item px-3"><a class="nav-link" href="index.html"><img src="image/si-glyph-home-page.svg" width="20px" height="20px" alt="home"> Home</a></li>
+
+				<li class="active nav-item px-3 dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><img src="image/si-glyph-circle-info.svg" width="20px" height="20px" alt="about"> About</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="about.html">About</a>
+						<a class="dropdown-item" href="contentmap.html">Content Map</a>
+						<a class="dropdown-item" href="wireframe.html">Wireframe</a>
+						<a class="dropdown-item" href="walkthough.html">Walkthrough</a>
+						<a class="dropdown-item" href="credits.html">Credits</a>
+					</div>
+				</li>
+
+				<li class="nav-item px-3"><a class="nav-link" href="gallery.html"><img src="image/si-glyph-folder.svg" width="20px" height="20px" alt="sample"> Gallery</a></li>
+				<li class="nav-item px-3"><a class="nav-link" href="contact.php"><img src="image/si-glyph-contact-book.svg" width="20px" height="20px" alt="contact"> Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main>
+		<div class="container-fluid w-75 py-5">
+			<div class="row">
+				<div class="col-sm-8">
+					<p class="display-4">Walkthrough</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid py-5 pl-5">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-10">
+					<table class="table table-hover w-75">
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Favicon is created on <a href="https://www.fotor.com/">https://www.fotor.com/</a></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Glyphicons from <a href="http://glyph.smarticons.co/">http://glyph.smarticons.co/</a>. Used as icon before links</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Video element is in <a href="gallery.html"> Gallery</a> page. <a href="https://www.youtube.com/watch?v=82pKPStTPK0&t=37s">Badminton Video: 20 years of Badminton in the Olympic Games - 1992 to 2012</a></td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Audio element is the backgroud music on the top right of gallery page. <a href="https://www.youtube.com/watch?v=gVnjzJkjzQo">BWF official theme song</a></td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>Slide show is in the <a href="index.html">home</a> page with 3 badminton pictures.</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td class="webfont">Web font is used in the top and foot navigation bar. Open Sans light 300.</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td>Canvas element is in <a href="canvas.html">Gallery</a> page. Implementd by drawImage() method.<br>
+									<pre class="mycode"><code>
+&lt;canvas id="pic" width="345" height="407" style="padding-left: 30%;">&lt;/canvas>
+&lt;img src="image/badminton_icon.png" id="badminton_icon" style="display: none;">
+&lt;script>
+	window.onload = function() {
+	var canvas = document.getElementById("pic");
+	var d = canvas.getContext("2d");
+	var img = document.getElementById('badminton_icon');
+	d.drawImage(img, 10, 10);
+	}
+&lt;/script>
+									</code></pre>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td>SVG element is the spinning vinyl I tried to create before the music player in <a href="gallery.html">Gallery</a> page.<br>
+									<pre class="mycode">
+										<code>
+&lt;svg class="vinyl pb-5" width="64" height="64">
+	&lt;circle cx="32" cy="32" r="20" fill="#35383d" stroke="black" />
+	&lt;circle cx="32" cy="32" r="5" fill="white" stroke="white" />
+	&lt;circle cx="32" cy="32" r="12" fill-opacity="0" stroke="black" />
+	&lt;circle cx="32" cy="32" r="13" fill-opacity="0" stroke="black" />
+	&lt;circle cx="32" cy="32" r="14" fill-opacity="0" stroke="black" />
+	&lt;circle cx="32" cy="32" r="15" fill-opacity="0" stroke="black" />
+	&lt;circle cx="32" cy="32" r="16" fill-opacity="0" stroke="black" />
+	&lt;polygon points="30,16 34,16 34,25 30,25" style="fill: white;" />
+&lt;/svg>
+
+.vinyl {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+										</code>
+									</pre>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td>HTML5 input validation is used in <a href="todo/todopage.php">To Do List</a> page and <a href="contact.html">Contact</a> page. Name, dates and email box are required to input text before submitting.</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>JSON data change is in <a href="json.html">Gallery</a> page, where the data of gold medalists are retrieved from a .json file.</td>
+							</tr>
+							<tr>
+								<th scope="row">11</th>
+								<td>Footer navigation is at the bottom of each page.</td>
+							</tr>
+							<tr>
+								<th scope="row">12</th>
+								<td>Server-side persistent storage is in <a href="todo/todopage.php">Gallery</a> page.</td>
+							</tr>
+							<tr>
+								<th scope="row">13</th>
+								<td>Data visualization is in <a href="piechart.php">Gallery</a> page. It's using pie chart to visualize the nationalities of top 25 badminton men's and women's single players.</td>
+							</tr>
+							<tr>
+								<th scope="row">14</th>
+								<td class="w">Custom elements are in <a href="stadium.html">Gallery</a> page.<br>
+									<pre class="mycode">
+										<code>
+&lt;link rel="import" href="https://raw-dot-custom-elements.appspot.com/GoogleWebComponents/google-map/
+v2.0.2/google-map/bower_components/google-map/google-map.html">
+&lt;link rel="import" href="https://raw-dot-custom-elements.appspot.com/GoogleWebComponents/google-map/
+v2.0.2/google-map/bower_components/google-map/google-map-marker.html">
+&lt;link rel="import" href="https://raw-dot-custom-elements.appspot.com/GoogleWebComponents/google-map/
+v2.0.2/google-map/google-map.html">
+&lt;style>
+ 	google-map {
+    	height: 400px;
+    	display: block;
+  	}
+  	#googleMap {
+  		padding-right: 5%;
+  	}
+&lt;/style>
+&lt;div id="googleMap">
+	
+	&lt;google-map latitude="52.48" longitude="-1.91" fit-to-marker 
+	api-key="AIzaSyCjSBIyPg5lO4CTkGGki8WZnHTq7jttOSg">
+	&lt;google-map-marker latitude="52.48" longitude="-1.91" draggable="true">&lt;/google-map-marker>
+	&lt;/google-map>
+&lt;/div>
+										</code>
+									</pre>
+								</code>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">15</th>
+								<td>Authentication is in <a href="auth.php">Gallery</a> page. Username is <code>jianqiaoma</code> and password is <code>opensesame</code></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+
+	</main>
+
+	<footer class="d-block bg-dark mt-4 webfont">
+		<div class="container-fluid">
+			<div class="row w-50 mx-auto mb-0">
+				<div class="col-md-4">
+					<p class="text-muted">Copyright &copy; 2017 Jianqiao Ma</p>
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+			</div>
+			<div class="row w-50 mx-auto mt-0">
+				<div class="col-md-3"><a class="nav-link text-light" href="index.html">Home</a></div>
+				<div class="col-md-3"><a class="nav-link text-light mb-0 pb-0" href="about.html">About</a><a class="nav-link text-light my-0 py-0" href="contentmap.html">Content Map</a><a class="nav-link text-light my-0 py-0" href="wireframe.html">Wireframe</a><a class="nav-link text-light my-0 py-0" href="walkthough.html">Walkthrough</a><a class="nav-link text-light my-0 py-0" href="credits.html">Credits</a></div>
+				<div class="col-md-3">
+					<a class="nav-link text-light mb-0 pb-0" href="gallery.html">Gallery</a>
+					<a class="nav-link text-light my-0 py-0" href="piechart.php"><small>&nbsp;&nbsp;Data Visualization</small></a>
+					<a class="nav-link text-light my-0 py-0" href="stadium.html"><small>&nbsp;&nbsp;Custom Elements</small></a>
+					<a class="nav-link text-light my-0 py-0" href="canvas.html"><small>&nbsp;&nbsp;Canvas</small></a>
+					<a class="nav-link text-light my-0 py-0" href="json.html"><small>&nbsp;&nbsp;JSON</small></a>
+					<a class="nav-link text-light my-0 py-0" href="todo/todopage.php"><small>&nbsp;&nbsp;Persistent Storage</small></a>
+
+				</div>
+				<div class="col-md-3"><a class="nav-link text-light" href="contact.php">Contact</a></div>
+			</div>
+    	</div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
